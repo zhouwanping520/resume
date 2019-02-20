@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="footer.css">
+      <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="footer.js"></script>
+</head>
+<body>
+ <!--头部><-->
+    <header>
+        <div class="head_zwf">
+        <a href="subject.html" title="张万福珠宝"><img src="img/logo.png"></a>
+        <i>欢迎登录</i>
+        </div>
+    </header>
+    <!--头部><-->
+     <!--登录><-->
+     <div class="head_login">
+        <div class="head_loginone">
+            <div class="head_logintwo">
+            <div class="login_one">
+             <span>张万福会员</span>
+            <a href="zhuce.html">立即注册</a>
+            </div>
+          <!--输入框><-->  
+           <div class="login_two">
+            <span class="login_user"></span><input type="text" placeholder="请输入手机号码/账号" id="inputUser">
+           </div> 
+            <div class="loginRemind"></div>
+           <div class="login_two">
+            <span class="login_pwd"></span><input type="password" placeholder="请输入密码" id="inputPwd">
+           </div> 
+            <div class="loginRemind" id="remind"></div>
+            <!--输入框><-->  
+           <div class="login_check">
+            <input type="checkbox"><b>记住密码</b>
+            <a href="#">忘记密码？</a>
+           </div>
+           <div class="login_btn">
+           <button onclick="login()">登录</button>
+           </div>
+            </div>
+        </div>
+
+     </div>
+      <!--尾部><-->
+      <script src="jquery-1.11.3.js"></script>
+      <script>
+   function login(){
+	  var xhr=new XMLHttpRequest();
+	  xhr.onreadystatechange=function(){
+	  if(xhr.status==200&&xhr.readyState==4){
+	     var result=xhr.responseText
+		 if(result=="1"){alert("用户名被存在")}
+         else{alert("用户可以注册")}
+	    }
+	  }
+	  xhr.open("post","/login/log",true);
+	  xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded")
+	  var formdata="inputUser="+inputUser.value+"&inputPwd="+inputPwd.value
+	  xhr.send(formdata)
+	}
+
+      </script>
+       <!--尾部><-->
+     <footer>
+        <script type="text/javascript">
+				footer();
+			</script>
+    </footer>
+    <!--尾部><-->
+</body>
+</html>

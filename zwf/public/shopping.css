@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type:none;
+}
+/*导航栏*/
+.shopping_nav{
+    width:1200px;
+    margin:0 auto;
+}
+.shopping_null{
+    float:left;
+}
+.shopping_nav a{
+    display:inline-block;
+    text-decoration:none;
+    font-size:0.75rem;
+    color:#666;
+}
+.shopping_nav a:hover{
+    border-bottom:1px solid red;
+    color:red;
+}
+/*导航栏*/
+/*商品展示*/
+.shopping_photo{
+    display:flex;
+    width:1200px;
+    height:500px;
+    margin-top:30px;
+}
+#chosen{
+    width:500px;
+    height:500px;
+    margin:0 auto;
+    margin-top:20px;
+    border:1px solid pink;
+  }
+  #list{
+      width:1200px;
+      margin:30px auto;
+      display:flex;
+      justify-content: center;
+  }
+  #list>img{
+      width:200px;
+      height:200px;
+      border:1px solid pink;
+  }
+/*商品展示*/
+/*轮播图*/
+#slider{
+    width:500px; height:500px;
+    position:relative;
+    margin:0 auto;
+    margin-top:20px;
+}
+#slider>img.show{  opacity:1;}
+#slider>img{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+/*轮播图*/
+.shopping_price{
+    position:relative;
+    margin:0px auto;
+    text-align:center;
+    width:1400px;
+    height:450px;
+    border:1px solid #d8d6d6;
+}
+.shopping_price a{
+    text-decoration: none;
+}
+/*左边*/
+.shopping_leftcar{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:600px;
+}
+.shopping_leftcar div{
+    margin-top:50px;
+}
+.leftcar_one i{
+    font-style:normal;
+    color:red;
+    font-size:3rem;
+    margin-left:50px;
+    margin-right:30px;
+}
+.leftcar_one b{
+    font-size:0.9rem;
+    margin-left:150px;
+}
+.leftcar_two a{
+    font-size:0.75rem;
+    color:#666;
+    margin-right:130px;
+}
+.leftcar_two a:hover{
+    color:red;
+}
+.leftcar_three a{
+    width:180px;
+    height:40px;
+    font-size:1.2em;
+    line-height:40px;
+    color:#fff;
+    font-weight: bold;
+    border-radius:5px;
+    background:orange;
+    margin-left:400px;
+    vertical-align:baseline;
+}
+/*左边*/
+/*右边*/
+.shopping_rightcar{
+    position:absolute;
+    right:197px;
+    top:50px;
+    width:600px;
+    text-align:left;
+}
+.rightcar_one i{
+    display:inline-block;
+    margin-left:100px;
+    padding:0px 5px 0px 5px;
+    font-style:normal;
+    font-size:0.8rem;
+    color:red;
+    line-height:30px;
+    height:30px;
+    border:1px solid red;
+}
+.rightcar_two{
+    margin-top:20px;
+}
+.rightcar_two i{
+    margin-left:30px;
+    margin-right:70px;
+    font-style:normal;
+}
+.rightcar_two button{
+    display:inline-block;
+    width:50px;
+    height:38px;
+    line-height:38px;
+    border:1px solid #d4d2d2;
+    text-align:center;
+    outline: none;
+    background:#fff;
+    margin:0;
+}
+.rightcar_two input{
+    width:50px;
+    height:38px;
+    text-align:center;
+    margin:0;
+    border:1px solid #d4d2d2;
+    outline: none;
+}
+.rightcar_two b{
+    margin-left:80px;
+    font-size:0.9rem;
+    color:#666;
+}
+.rightcar_three a{
+    width:180px;
+    height:40px;
+    font-size:1.2em;
+    line-height:40px;
+    color:#fff;
+    font-weight: bold;
+    border-radius:5px;
+    text-align:center;
+    background:red;
+    margin-top:173px;
+    margin-left:10px;
+}
+/*右边*/
+/*商品详情*/
+.shopping_title{
+    margin:0 auto;
+    text-align:left;
+    width:1235px;
+}
+.shopping_title a{
+    border-top:2px solid #f40;
+    display:inline-block;
+    width:150px;
+    height:16px;
+    font-weight:bold;
+    text-align:center;
+}
+.shopping_type{
+    width:1220px;
+    height:60px;
+    line-height:30px;
+    margin:0 auto;
+    color:#666;
+    font-size:0.9rem;
+}
+.shopping_type p{
+    font-size:1rem;
+    color:#000;
+    font-weight: bold;
+    padding: 38px 0 28px 36px;
+}
+.shopping_type span{
+    padding:5px;
+}
+
+/*照片*/
+.shopping_index{
+    width:1200px;
+    border:1px solid #d8d6d6;
+    margin:100px auto;
+}
+.index_img{
+    float:right;
+    width:300px;
+    height:48px;
+    margin-top:50px;
+    line-height:48px;
+    padding-left: 90px;
+    color:red;
+    font-size:0.9rem;
+    text-align:center;
+    border:1px solid #d8d6d6;
+    background:url(img/logoHot.png)no-repeat center;
+}
+.shopping_index img{
+    display:block;
+    margin:0 auto;
+}
+/*照片*/

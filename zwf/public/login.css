@@ -1,0 +1,139 @@
+*{
+    padding:0;
+    margin:0;
+}
+a{
+    display:inline-block;
+    text-decoration:none;
+}
+ul{
+    list-style-type:none;
+}
+/*头部*/
+header{
+    width:1200px;
+    height:100px;
+    margin:0 auto;
+    border-top:1px solid #fff;
+}
+.head_zwf{
+    margin-top:40px;
+}
+.head_zwf i{
+    margin-left:10%;
+    font-size:1.2rem;
+    margin-top:5px;
+}
+/*头部*/
+/*登录*/
+.head_login{
+    width:1920px;
+    height:654px;
+    margin-bottom: 100px;
+    background:url(img/loginBg.png)no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.head_loginone{
+    width:1200px;
+    height:500px;
+    margin:0 auto;
+}
+.head_logintwo{
+    margin-top:90px;
+    background:#fff;
+    float:right;
+    width:380px;
+    height:420px;
+}
+.login_one{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:1.15rem;
+    color:#666;
+}
+.login_one a{
+    margin-left:180px;
+    color:red;
+    font-size:0.9rem;
+}
+/*输入框*/
+.login_two{
+    position: relative;
+    text-align:center;
+}
+.login_two img{
+    border:1px solid black;
+}
+.login_user{
+    position:absolute;
+    left:0px;
+    top:30px;
+    width:54px;
+    height:50px;
+    border:1px solid #b5b5b5;
+    border-right:none;
+    background:url(img/user.png)no-repeat;
+    background-position:15px 10px;
+}
+.login_pwd{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:50px;
+    border:1px solid #b5b5b5;
+    border-right:none;
+    background:url(img/password.png)no-repeat;
+    background-position:15px 10px;
+}
+#inputPwd{
+    width:246px;
+    height:50px; 
+    margin-left:54px;
+    padding-left:17px;
+    outline:medium;
+    border:1px solid #b5b5b5;
+}
+#inputUser{
+    width:246px;
+    height:50px; 
+    margin-top:30px;
+    margin-left:54px;
+    padding-left:17px;
+    outline:medium;
+    border:1px solid #b5b5b5;
+}
+.loginRemind{
+    width:320px;
+    height:30px;
+    margin:0 auto;
+}
+/*输入框*/
+.login_check{
+    margin-left:30px;
+    margin-top:10px;
+}
+.login_check a{
+    margin-left:190px;
+    color:red;
+    font-size:0.9rem;
+}
+.login_check b{
+    font-size:0.9rem;
+    color:#666;
+}
+.login_btn{
+    margin-top:10px;
+   text-align:center;
+}
+.login_btn button{
+    width:320px;
+    height:50px;
+    color:#fff;
+    font-size:1rem;
+    background:red;
+}
+.login_btn button:hover{
+    background:rgb(231, 17, 52);
+}

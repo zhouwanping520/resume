@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>彩金专栏</title>
+		<link rel="stylesheet" href="head.css">
+		<link rel="stylesheet" href="footer.css">
+		<link rel="stylesheet" href="shopping.css">
+		<link rel="stylesheet" href="box.css">
+		<script type="text/javascript" src="head.js"></script>
+		<script type="text/javascript" src="footer.js"></script>
+		<script src="jquery-1.11.3.js"></script>
+	</head>
+
+	<body>
+		<!--头部><-->
+		<script type="text/javascript">
+			head();
+		</script>
+		<!--头部><-->
+		<!--详情标题栏><-->
+		<div class="shopping_nav">
+			<div class="shopping_null"></div>
+			<a href="#">首页</a>><a href="#">商品中心</a>> <a href="#"> 彩色宝/尊贵宝石</a>><a href="#">18k玫瑰金碧玺镶钻水滴形吊坠 柔情似水</a>
+		</div>
+		<!--详情标题栏><-->
+		<!--商品展示><-->
+			<div id="chosen">
+			<img src="img/31.jpg" alt="">
+			</div>
+			<div id="list">
+				<!--<img src="img/32.jpg" alt="" class="show">><-->
+				<img src="img/31.jpg" alt="">
+				<img src="img/32.jpg" alt="">
+				<img src="img/35.jpg" alt="">
+				<img src="img/33.jpg" alt="">
+				<img src="img/34.jpg" alt="">
+			</div>
+		<!--商品展示><-->
+		<!--轮播图
+		<div id="slider">
+				<img src="img/32.jpg" alt="" class="show">
+				<img src="img/31.jpg" alt="">
+				<img src="img/35.jpg" alt="">
+				<img src="img/33.jpg" alt="">
+				<img src="img/34.jpg" alt="">
+			</div>
+			><-->
+		<!--价格栏><-->
+		<div class="shopping_price">
+			<!--左边购物车><-->
+			<div class="shopping_leftcar">
+				<div>
+					<h2>18k玫瑰金碧玺镶钻水滴形吊坠 柔情似水</h2>
+				</div>
+				<div class="leftcar_one">
+					<i>￥1199</i>
+					<del>￥3600</del>
+					<b>销量：0</b>
+				</div>
+				<div class="leftcar_two" id="leftcar">
+					<img src="img/collectGray.png" alt="" id="xingxing">
+					<a href="javascript:;" id="shoucang">收藏（606）</a>
+					<a href="#">分享</a>
+				</div>
+				<div class="leftcar_three">
+					<a href="#"><img src="img/shoppingCar.png" alt=""> 加入购物车</a>
+				</div>
+			</div>
+			<!--左边购物车><-->
+			<!--右边购物车><-->
+			<div class="shopping_rightcar">
+				<div class="rightcar_one">
+					<span>重量</span>
+					<i>约0.95g</i>
+				</div>
+				<div class="rightcar_two">
+					<i>购买数量</i>
+					<button id="jianshu">-</button>
+					<input type="text" value="1" id="jiashu">
+					<button id="zengj">+</button>
+					<b>(库存1件)</b>
+				</div>
+				<div class="rightcar_three">
+					<a href="#">立即支付</a>
+				</div>
+			</div>
+		</div>
+		<!--右边购物车><-->
+		<!--照片><-->
+		<div class="shopping_title">
+			<a href="javascript:;" id="xiangqing">商品详情</a>
+			<a href="javascript:;" id="pingjia">评价（0）</a>
+			</div>
+		<div class="shopping_packge" id="shopping_img">
+			<div class="shopping_type">
+				<p>商品参数</p>
+				<span>品牌:张万福</span>
+				<span>货号:DS-SDXBXDZ</span>
+				<span>鉴定证书:国家金银制品质量监督检验中心</span>
+				<span>配链:否</span>
+				<span>镶嵌材质:K金镶嵌</span>
+				<span>镶石材质:碧玺</span>
+				<span>款式:吊坠</span>
+				<span>适用对象:女</span>
+				<span>售后服务:专柜联保、店铺保修</span>
+			</div>
+			<div class="shopping_index">
+				<div class="index_img">
+					<p>热门产品</p>
+				</div>
+				<img src="img/36.jpg" alt="">
+				<img src="img/37.jpg" alt="">
+				<img src="img/39.jpg" alt="">
+				<img src="img/40.jpg" alt="">
+				<img src="img/41.jpg" alt="">
+				<img src="img/42.jpg" alt="">
+				<img src="img/43.jpg" alt="">
+				<img src="img/45.jpg" alt="">
+				<img src="img/46.jpg" alt="">
+				<img src="img/47.jpg" alt="">
+			</div>
+		</div>
+		<!--照片><-->
+		<!--尾部><-->
+		<script>
+		$("#zengj").click(function(){
+			var $btn1=$(this);
+			var $jiashu=$("#jiashu");
+			var $n=parseInt($jiashu.val());
+			$n++;
+			$jiashu.val($n)		
+		})
+		$("#jianshu").click(function(){
+			var $btn2=$(this);
+			var $houtui=$("#jiashu");
+			var $i=parseInt($houtui.val());
+			if($i>=1){
+				$i--;
+				}
+				$houtui.val($i)
+		})
+		//商品展示
+		 $("#list>img").click(function(){
+     var $img=$(this);
+     $img.clone().replaceAll("#chosen>img")
+  })//商品展示
+
+		//详情页面显示，隐藏
+		$("#xiangqing").click(function(){
+				$("#shopping_img").fadeToggle(2000);
+		})
+		$("#pingjia").click(function(){
+			$("#shopping_img").toggle(3000);
+		})
+//详情页面显示，隐藏
+		var shopping_img=document.getElementById("shopping_img")
+		var xiangqing=document.getElementById("xiangqing")
+		var xingxing=document.getElementById("xingxing")
+		function login(){
+			shoucang.addEventListener("click",login);
+			
+		}
+		var shoucang=document.getElementById("shoucang");
+			shoucang.onclick=function (){
+			xingxing.setAttribute("src","img/collect.png")
+		}
+
+		  /*周期性定时器*/
+  //1定义任务函数
+ /*function task(){
+  //查找class为show的当前img
+  var img=document.getElementsByClassName("show")[0];
+//将当前img的class清除
+  img.className=""
+//如果当前img有下一个元素
+if(img.nextElementSibling!==null)
+//才设置当前img的下一个兄弟的class为show
+img.nextElementSibling.className="show"
+//设置当前的父元素的第一个孩子的class为show
+else
+img.parentNode.children[0].className="show"
+  }
+//启用定时器
+var n=setInterval(task,3000);
+//查找id为slider的div容器元素
+var div=document.getElementById("slider")
+//当鼠标进入div时
+//停止定时器
+div.onmouseover=function(){
+  clearInterval(n)
+}
+//当鼠标移出定时器
+//启动定时器
+div.onmouseout=function(){
+  n=setInterval(task,3000)
+}*/
+</script>
+		<footer>
+			<script type="text/javascript">
+				footer();
+			</script>
+		</footer>
+		<!--尾部><-->
+		<!--隐藏div><-->
+		<script type="text/javascript" src="mouse.js"></script>
+		<!--隐藏div><-->
+	</body>
+
+</html>
