@@ -3,13 +3,11 @@ const express=require('express');
 const pool=require('../pool.js');
 //引入连接池
 var router=express.Router();
-//1.用户注册
+//1.登录验证
 router.get('/',(req,res)=>{
-    //获取post请求的数据
-        //console.log(1111)
-   var $phone=req.query.phone;
-  var sql="select * from zwf_login where phone=?";
-  pool.query(sql,[$phone],(err,result)=>{
+   var $uname=req.query.uname;
+  var sql="select * from zwf_login where uname=?";
+  pool.query(sql,[$uname],(err,result)=>{
     if (err)  throw err;
     //res.send(result)
    //console.log(result)
@@ -17,4 +15,17 @@ router.get('/',(req,res)=>{
    else{res.send("0")} 
   })
 });
+//用户注册
+router.post("/register",(req,res)=>{
+    var obj=req.body;
+    var $uname=obj.uname;
+    var $upwd=obj.upwd;
+    var $phone=obj.phone;
+    
+    var sql="insert into zwf_login values(NULL,?,?,?)"
+    pool.query(sql,[$uname,$upwd,$phone],(err,result)=>{
+      if(err)  throw  err
+        res.send("1")
+    })
+ })
 module.exports=router;
