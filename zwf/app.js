@@ -13,7 +13,7 @@ server.use(express.static('public'));
 server.use(bodyParser.urlencoded({
 	extended:false
 }));
-//ajax测试案例挂载
+//挂载
 server.use('/login',login);
 server.use('/subject',subject);
 server.use('/login2',login2);
