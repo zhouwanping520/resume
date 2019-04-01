@@ -27,7 +27,7 @@ header{
 /*头部*/
 /*登录*/
 .head_login{
-    width:1920px;
+    width:100%;
     height:654px;
     margin-bottom: 100px;
     background:url(img/loginBg.png)no-repeat;
